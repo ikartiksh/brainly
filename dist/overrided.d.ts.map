@@ -1,0 +1,1 @@
+{"version":3,"file":"overrided.d.ts","sourceRoot":"","sources":["../src/overrided.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC;AAEV,OAAO,CAAC,MAAM,CAAC;IACX,UAAU,OAAO,CAAC;QAChB,UAAiB,OAAO;YACpB,MAAM,CAAC,EAAE,MAAM,CAAC;SACnB;KACF;CACJ"}
