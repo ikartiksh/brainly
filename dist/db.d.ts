@@ -26,6 +26,7 @@ export declare const UserModel: mongoose.Model<{
 } & {
     __v: number;
 }>>;
+<<<<<<< HEAD
 export declare const LinkModel: mongoose.Model<{
     userId: {
         prototype?: mongoose.Types.ObjectId | null;
@@ -101,6 +102,8 @@ export declare const LinkModel: mongoose.Model<{
 } & {
     __v: number;
 }>>;
+=======
+>>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
 export declare const ContentModel: mongoose.Model<{
     tags: mongoose.Types.DocumentArray<{
         prototype?: unknown;

@@ -1,10 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
+<<<<<<< HEAD
 import { ContentModel, LinkModel, UserModel } from "./db.js";
 import { JWT_PASSWORD } from "./config.js";
 import { userMiddleware } from "./middleware.js";
 import { random } from "./utils.js";
+=======
+import { ContentModel, UserModel } from "./db.js";
+import { JWT_PASSWORD } from "./config.js";
+import { userMiddleware } from "./middleware.js";
+>>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
 const app = express();
 app.use(express.json());
 app.post("/api/v1/signup", async (req, res) => {
@@ -52,6 +58,10 @@ app.post("/api/v1/content", userMiddleware, async (req, res) => {
     await ContentModel.create({
         link,
         type,
+<<<<<<< HEAD
+=======
+        //@ts-ignore
+>>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
         userId: req.userId,
         tags: []
     });
@@ -69,6 +79,7 @@ app.get("/api/v1/content", userMiddleware, async (req, res) => {
         content
     });
 });
+<<<<<<< HEAD
 app.get("/api/v1/brain/share", userMiddleware, async (req, res) => {
     const share = req.body.share;
     if (share) {
@@ -111,5 +122,7 @@ app.get("/api/v1/brain/:shareLink", async (req, res) => {
         content: content
     });
 });
+=======
+>>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
 app.listen(3000);
 //# sourceMappingURL=index.js.map

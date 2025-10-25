@@ -13,10 +13,13 @@ const contentSchema = new Schema({
     tags: [{ type: mongoose.Types.ObjectId, ref: 'Tag' }],
     userId: { type: mongoose.Types.ObjectId, ref: 'User', required: true },
 });
+<<<<<<< HEAD
 const linkSchema = new Schema({
     hash: { type: String, required: true },
     userId: { type: mongoose.Types.ObjectId, ref: 'User', required: true, unique: true },
 });
 export const LinkModel = model("Link", linkSchema);
+=======
+>>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
 export const ContentModel = model("Content", contentSchema);
 //# sourceMappingURL=db.js.map
