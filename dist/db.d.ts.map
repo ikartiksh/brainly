@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"file":"db.d.ts","sourceRoot":"","sources":["../src/db.ts"],"names":[],"mappings":"AAAA,OAAO,QAAyB,MAAM,UAAU,CAAC;AAQjD,eAAO,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;GAA4B,CAAC;AAiBnD,eAAO,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAA4B,CAAA;AAElD,eAAO,MAAM,YAAY;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAAkC,CAAA"}
-=======
-{"version":3,"file":"db.d.ts","sourceRoot":"","sources":["../src/db.ts"],"names":[],"mappings":"AAAA,OAAO,QAAyB,MAAM,UAAU,CAAC;AAQjD,eAAO,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;;;;;GAA4B,CAAC;AAYnD,eAAO,MAAM,YAAY;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAAkC,CAAA"}
->>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6

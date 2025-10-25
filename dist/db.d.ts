@@ -26,7 +26,6 @@ export declare const UserModel: mongoose.Model<{
 } & {
     __v: number;
 }>>;
-<<<<<<< HEAD
 export declare const LinkModel: mongoose.Model<{
     userId: {
         prototype?: mongoose.Types.ObjectId | null;
@@ -102,8 +101,6 @@ export declare const LinkModel: mongoose.Model<{
 } & {
     __v: number;
 }>>;
-=======
->>>>>>> b218b18f6a932ca3704b95f7ac6f76a38d3a81b6
 export declare const ContentModel: mongoose.Model<{
     tags: mongoose.Types.DocumentArray<{
         prototype?: unknown;
@@ -225,7 +222,6 @@ export declare const ContentModel: mongoose.Model<{
 }, mongoose.Schema<any, mongoose.Model<any, any, any, any, any, any>, {}, {}, {}, {}, mongoose.DefaultSchemaOptions, {
     type: string;
     link: string;
-    title: string;
     tags: {
         prototype?: mongoose.Types.ObjectId | null;
         cacheHexString?: unknown;
@@ -244,10 +240,10 @@ export declare const ContentModel: mongoose.Model<{
         createFromBase64?: {} | null;
         isValid?: {} | null;
     };
+    title?: string | null;
 }, mongoose.Document<unknown, {}, mongoose.FlatRecord<{
     type: string;
     link: string;
-    title: string;
     tags: {
         prototype?: mongoose.Types.ObjectId | null;
         cacheHexString?: unknown;
@@ -266,10 +262,10 @@ export declare const ContentModel: mongoose.Model<{
         createFromBase64?: {} | null;
         isValid?: {} | null;
     };
+    title?: string | null;
 }>, {}, mongoose.ResolveSchemaOptions<mongoose.DefaultSchemaOptions>> & mongoose.FlatRecord<{
     type: string;
     link: string;
-    title: string;
     tags: {
         prototype?: mongoose.Types.ObjectId | null;
         cacheHexString?: unknown;
@@ -288,6 +284,7 @@ export declare const ContentModel: mongoose.Model<{
         createFromBase64?: {} | null;
         isValid?: {} | null;
     };
+    title?: string | null;
 }> & {
     _id: mongoose.Types.ObjectId;
 } & {

@@ -5,6 +5,7 @@ import { ContentModel, LinkModel, UserModel } from "./db.js";
 import { JWT_PASSWORD } from "./config.js";
 import { userMiddleware } from "./middleware.js";
 import { random } from "./utils.js";
+import { hash } from "crypto";
 
 const app = express();
 app.use(express.json());
@@ -67,7 +68,6 @@ app.post("/api/v1/content", userMiddleware, async (req,res) => {
 })
 
 app.get("/api/v1/content", userMiddleware, async (req,res) => {
-    //@ts-ignore
     const userId = req.userId;
     const content = await ContentModel.find({
         userId: userId
@@ -77,16 +77,29 @@ app.get("/api/v1/content", userMiddleware, async (req,res) => {
     })
 })
 
-app.get("/api/v1/brain/share", userMiddleware, async(req,res) => {
+app.post("/api/v1/brain/share", userMiddleware, async(req,res) => {
     const share = req.body.share;
     if (share) {
+        const existingLink = await LinkModel.findOne({
+            userId: req.userId
+        });
+        if (existingLink) {
+            res.json({
+                hash: existingLink.hash
+            })
+        }
+        const hash = random(10);
        await LinkModel.create({
             userId: req.userId,
-            hash: random(10),
+            hash: hash,
         })
     } else {
        await LinkModel.deleteOne({
             userId: req.userId
+        })
+
+        res.json({
+            hash
         })
     }
 })
@@ -110,7 +123,7 @@ app.get("/api/v1/brain/:shareLink", async(req,res) => {
     })
 
     const user = await UserModel.findOne({
-        userId: link.userId
+        _id: link.userId
     })
 
       if (!user) {
