@@ -1,5 +1,4 @@
 import express from "express"
-import mongoose from "mongoose";
 import jwt from "jsonwebtoken"
 import { ContentModel, LinkModel, UserModel } from "./db.js";
 import { JWT_PASSWORD } from "./config.js";
